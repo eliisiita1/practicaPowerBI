@@ -1,11 +1,11 @@
 PRÁCTICA POWER BI.  
-Primero se carga el fichero Airbnb-Listing Madrid csv como fuente de datos y lo transformamos. Para ello, se eliman las columnas que no son necesarias, como Listing url, el nombre o el resumen. Además, elimino la columna ‘Experiences offered’ porque tiene un alto porcentaje de valores a none, y no aporta valor. 
+Primero se carga el fichero Airbnb-Listing Madrid csv como fuente de datos y se transforma. Para ello, se eliminan las columnas que no son necesarias, como Listing url, el nombre o el resumen. Además, se borra la columna ‘Experiences offered’ porque tiene un porcentaje muy alto de valores 'none', y no aporta valor. 
 
-Además, filtramos por los airbnbs en Madrid (filtramos por las que contienen “Mad”, vemos que el resultado es correcto, y aceptamos), como se muestra en la siguiente imagen.
+Además, se añade un filtro para trabajar únicamente con los airbnbs en Madrid (filtramos por las que contienen “Mad”, vemos que el resultado es correcto, y aceptamos), como se muestra en la siguiente imagen.
 
  ![image](https://github.com/user-attachments/assets/8dd26489-f250-4686-836f-cd1e1adef397)
 
-Puesto que se necesitan solo los datos relacionados con los airbnbs de Madrid/ Comunidad de Madrid, se eliminan también las columnas Country Code, Market (siempre es Madrid), Country, etc.
+Puesto que se necesitan solo los datos relacionados con los airbnbs de Madrid/ Comunidad de Madrid, se eliminan también las columnas Country Code, Market (siempre es Madrid), Country, etc, que son innecesarias.
 
 A continuación, se carga el fichero Nveces_alquilado.csv como fuente de datos y, por último, se añade la relación entre ambos archivos cargados, como se muestra en la siguiente imagen.
 
@@ -13,7 +13,7 @@ A continuación, se carga el fichero Nveces_alquilado.csv como fuente de datos y
  
 En este nuevo fichero, se crea una nueva columna nueva que es el número de amenities que tiene cada Airbnb a alquilar.
 
-Una vez se cargan los ficheros y se eliman las columnas innecesarias, se van a crear las columnas calculadas que se usarán en la creación del Dashboard.
+Una vez se cargan los ficheros y se eliman las columnas innecesarias, se van a añadir las columnas calculadas que se usarán en la creación del Dashboard.
 
 La primera columna del fichero ‘airbnb-listings Madrid’ a crear es ‘Number of amenities’, que calcula cuántas amenities tiene un Airbnb a partir del listado de amenities.
 
@@ -21,16 +21,19 @@ La primera columna del fichero ‘airbnb-listings Madrid’ a crear es ‘Number
 
 Las partes de la fórmula son las siguientes:
 LEN('YourTableName'[amenities]) -> Calcula la longitud de la cadena en la columna amenities.
+
 SUBSTITUTE('YourTableName'[amenities], ",", "") -> Elimina todas las comas de la cadena.
+
 LEN('YourTableName'[amenities]) - LEN(SUBSTITUTE('YourTableName'[amenities], ",", "")) -> Encuentra la diferencia en longitud, que es el número de comas en la cadena.
+
 + 1-> Añade 1 al resultado para contar el número total de amenities, ya que el número de comas es siempre uno menos que el número de items listados.
 
-Otra columna calculada del fichero ‘airbnb-listings Madrid’ es ‘Number of Host Verification’, que, de la misma forma en la que se calcula la columna anterior, cuenta cuántas verificaciones tiene cada host.
+Otra columna calculada para el fichero ‘airbnb-listings Madrid’ quw se añade es ‘Number of Host Verification’, que, de la misma forma en la que se calcula la columna anterior, muestra cuántas verificaciones tiene cada host.
 
 ![image](https://github.com/user-attachments/assets/ba77ec25-d885-4717-ad7e-0d5133505c25)
 
  
-Por otro lado, la columna calculada ‘RentalCategory’ en el fichero ‘Nveces_alquilado’ clasifica los airbnbs por el número de veces que se ha alquilado, agrupándolos en tres grupos: Recién estrenado, veterano de alquiler y estrella del alquiler.
+Por último, se crea la columna calculada ‘RentalCategory’ en el fichero ‘Nveces_alquilado’ para clasificar los airbnbs por el número de veces que se ha alquilado, agrupándolos en tres grupos: Recién estrenado, veterano de alquiler y estrella del alquiler.
  
  ![image](https://github.com/user-attachments/assets/51755843-3eba-417c-b191-830208f91570)
 
