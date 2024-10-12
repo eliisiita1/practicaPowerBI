@@ -70,29 +70,30 @@ Reviews Rate: Los valores más altos (en rojo) parecen asociarse con los nuevos 
 Rental Category: Las categorías como "Recién Estrenado" tienden a recibir una coloración verde, lo que refuerza su desempeño positivo en cuanto a la interacción con los huéspedes.
 
  
-   - **Relación entre la tasa de respuesta del anfitrión y la calificación de las reseñas**: Este gráfico de dispersión muestra que no parece haber una correlación clara entre el **Host Response Rate** (tasa de respuesta del anfitrión) y el **Review Scores Rating** (calificación de las reseñas). Los datos están muy dispersos, indicando que, aunque algunos anfitriones tienen una tasa de respuesta muy alta, esto no necesariamente se refleja en mejores calificaciones.
-     - **Conclusión:** La rapidez o frecuencia con la que un anfitrión responde no parece influir directamente en la calificación general que reciben
+- **Relación entre la tasa de respuesta del anfitrión y la calificación de las reseñas**: Este gráfico de dispersión muestra que no parece haber una correlación clara entre el **Host Response Rate** (tasa de respuesta del anfitrión) y el **Review Scores Rating** (calificación de las reseñas). Los datos están muy dispersos, indicando que, aunque algunos anfitriones tienen una tasa de respuesta muy alta, esto no necesariamente se refleja en mejores calificaciones.
+Como conclusión, la rapidez o frecuencia con la que un anfitrión responde no parece influir directamente en la calificación general que reciben
 
 ![image](https://github.com/user-attachments/assets/6a5c085a-20d2-48cd-b090-6b229264887a)
 
-   - **Relación entre el tipo de propiedad y el tipo de habitación con el promedio de valor de las reseñas**: Aquí se puede ver la comparación del **Review Scores Value** entre diferentes tipos de propiedades y tipos de habitaciones. Los alojamientos de tipo **Entire home/apt** y **Private room** parecen tener un rango de puntuaciones más altas que los alojamientos compartidos (**Shared room**).
-     - Los **Apartments**, **Lofts** y **Townhouses** tienden a tener mayores puntuaciones, mientras que propiedades como **Hostels** y **Boutique Hotels** tienden a tener puntuaciones más bajas.
-     - **Conclusión:** Las propiedades más privadas como **apartamentos completos** o **lofts** tienden a recibir mejores valoraciones en comparación con habitaciones compartidas o propiedades más comunes como hostales.
+  - **Relación entre el tipo de propiedad y el tipo de habitación con el promedio de valor de las reseñas**: Aquí se puede ver la comparación del **Review Scores Value** entre diferentes tipos de propiedades y tipos de habitaciones. Los alojamientos de tipo **Entire home/apt** y **Private room** parecen tener un rango de puntuaciones más altas que los alojamientos compartidos (**Shared room**).
+Los **Apartments**, **Lofts** y **Townhouses** tienden a tener mayores puntuaciones, mientras que propiedades como **Hostels** y **Boutique Hotels** tienden a tener puntuaciones más bajas.
+Como conclusión, las propiedades más privadas como **apartamentos completos** o **lofts** tienden a recibir mejores valoraciones en comparación con habitaciones compartidas o propiedades más comunes como hostales.
 
 
 ![image](https://github.com/user-attachments/assets/c0875ab5-212a-470d-9067-1539bec1a57e)
 
 
-   - **Ranking de barrios con las calificaciones más bajas**: Este gráfico de barras clasifica los barrios que han recibido las calificaciones más bajas. Los barrios de **Moncloa**, **Valdeacederas** y **Nueva España** son los que tienen los puntajes más bajos en promedio.
-     - **Conclusión:** Estos barrios podrían necesitar mejoras en cuanto a la calidad de sus alojamientos o en los servicios que ofrecen, ya que reciben las calificaciones más bajas en el dataset.
+ - **Ranking de barrios con las calificaciones más bajas**:
+Este gráfico de barras clasifica los barrios que han recibido las calificaciones más bajas. Los barrios de **Moncloa**, **Valdeacederas** y **Nueva España** son los que tienen los puntajes más bajos en promedio.
+Como conclusión, estos barrios podrían necesitar mejoras en cuanto a la calidad de sus alojamientos o en los servicios que ofrecen, ya que reciben las calificaciones más bajas en el dataset.
 
 ![image](https://github.com/user-attachments/assets/e909a651-a853-44f1-bc87-f83824d71170)
 
-   - **Comparación de factores clave en las evaluaciones**: Este gráfico de radar compara cuatro factores clave en las evaluaciones: **Número de Amenidades**, **Precio**, **Tarifa de Limpieza** y **Noche Mínima**.
-     - **Conclusión:** Los **precios** y las **tarifas de limpieza** tienden a recibir puntajes más bajos en comparación con las demás categorías, lo que sugiere que los usuarios encuentran que estos dos factores no son tan satisfactorios. El **número de amenidades** y las **noches mínimas** parecen recibir evaluaciones más equilibradas.
+ - **Comparación de factores clave en las evaluaciones**:
+Este gráfico de radar compara cuatro factores clave en las evaluaciones: **Número de Amenidades**, **Precio**, **Tarifa de Limpieza** y **Noche Mínima**.
+Como conclusión, los **precios** y las **tarifas de limpieza** tienden a recibir puntajes más bajos en comparación con las demás categorías, lo que sugiere que los usuarios encuentran que estos dos factores no son tan satisfactorios. Además, el **número de amenidades** y las **noches mínimas** parecen recibir evaluaciones más equilibradas.
 
 ![image](https://github.com/user-attachments/assets/e11017a3-70f7-4b26-bc40-0988381dc188)
-
 
 
 
@@ -104,7 +105,7 @@ Rental Category: Las categorías como "Recién Estrenado" tienden a recibir una 
 En esta página se hace la comparación del resultado del promedio de las distintas características de los Airbnb para los pero valorados y los mejor valorados con más reviews.
  
 
--	Conclusiones:
+Conclusiones.
 El número de comodidades, el porcentaje de respuesta del host y el número de veces que se alquila, de los Airbnb mejor valorados tienen un promedio mayor, por lo que son características que favorecen que los Airbnb sean mejores. Estas características afectan proporcionalmente a la nota que los usuarios ponen a los airbnbs.
 Por otro lado, la tasa de limpieza es más alta en los airbnbs mejor valorados, por lo que seguramente haga que los airbnbs estén más limpios y esto a su vez favorezca la nota del Airbnb. Esto mismo ocurre con el precio, que, es mayor en airbnbs mejor valorados seguramente por las características que tiene. 
 Por último, el número de verificaciones del host, la disponibilidad y el número de estancias en los airbnbs es menor en los airbnbs mejor valorados, pero son características que no deben afectar proporcionalmente a la score review.
