@@ -46,10 +46,34 @@ Con este dashboard se busca estudiar cómo afectan las distintas característica
 
 En esta página se crean todos los gráficos necesarios para estudiar cómo afectan las características de los hosts y de los airbnbs a las reviews recibidas por los usuarios. 
 Como conclusiones, se pueden obtener las siguientes:
-o	La valoración de la respuesta de los host afecta proporcionalmente a la valoración de los reviews. 
-o	 
+ 
+   - **Relación entre la tasa de respuesta del anfitrión y la calificación de las reseñas**: Este gráfico de dispersión muestra que no parece haber una correlación clara entre el **Host Response Rate** (tasa de respuesta del anfitrión) y el **Review Scores Rating** (calificación de las reseñas). Los datos están muy dispersos, indicando que, aunque algunos anfitriones tienen una tasa de respuesta muy alta, esto no necesariamente se refleja en mejores calificaciones.
+     - **Conclusión:** La rapidez o frecuencia con la que un anfitrión responde no parece influir directamente en la calificación general que reciben
 
-	
+![image](https://github.com/user-attachments/assets/6a5c085a-20d2-48cd-b090-6b229264887a)
+
+   - **Relación entre el tipo de propiedad y el tipo de habitación con el promedio de valor de las reseñas**: Aquí se puede ver la comparación del **Review Scores Value** entre diferentes tipos de propiedades y tipos de habitaciones. Los alojamientos de tipo **Entire home/apt** y **Private room** parecen tener un rango de puntuaciones más altas que los alojamientos compartidos (**Shared room**).
+     - Los **Apartments**, **Lofts** y **Townhouses** tienden a tener mayores puntuaciones, mientras que propiedades como **Hostels** y **Boutique Hotels** tienden a tener puntuaciones más bajas.
+     - **Conclusión:** Las propiedades más privadas como **apartamentos completos** o **lofts** tienden a recibir mejores valoraciones en comparación con habitaciones compartidas o propiedades más comunes como hostales.
+
+
+![image](https://github.com/user-attachments/assets/c0875ab5-212a-470d-9067-1539bec1a57e)
+
+
+   - **Ranking de barrios con las calificaciones más bajas**: Este gráfico de barras clasifica los barrios que han recibido las calificaciones más bajas. Los barrios de **Moncloa**, **Valdeacederas** y **Nueva España** son los que tienen los puntajes más bajos en promedio.
+     - **Conclusión:** Estos barrios podrían necesitar mejoras en cuanto a la calidad de sus alojamientos o en los servicios que ofrecen, ya que reciben las calificaciones más bajas en el dataset.
+
+![image](https://github.com/user-attachments/assets/e909a651-a853-44f1-bc87-f83824d71170)
+
+   - **Comparación de factores clave en las evaluaciones**: Este gráfico de radar compara cuatro factores clave en las evaluaciones: **Número de Amenidades**, **Precio**, **Tarifa de Limpieza** y **Noche Mínima**.
+     - **Conclusión:** Los **precios** y las **tarifas de limpieza** tienden a recibir puntajes más bajos en comparación con las demás categorías, lo que sugiere que los usuarios encuentran que estos dos factores no son tan satisfactorios. El **número de amenidades** y las **noches mínimas** parecen recibir evaluaciones más equilibradas.
+
+![image](https://github.com/user-attachments/assets/e11017a3-70f7-4b26-bc40-0988381dc188)
+
+
+
+
+
 -	Página 2 - Comparación por reviews de los airbnbs con peor y mejor reviews.
 
   ![image](https://github.com/user-attachments/assets/9189cac6-c796-44be-83af-fe843761aeed)
