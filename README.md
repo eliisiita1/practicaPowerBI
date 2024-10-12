@@ -1,9 +1,6 @@
-PRÁCTICA POWER BI.
-
-![image](https://github.com/user-attachments/assets/bc4df4f1-8e3d-4c10-8eb9-0cd979a5bbe1)
-
-  
+PRÁCTICA POWER BI.  
 Primero se carga el fichero Airbnb-Listing Madrid csv como fuente de datos y lo transformamos. Para ello, se eliman las columnas que no son necesarias, como Listing url, el nombre o el resumen. Además, elimino la columna ‘Experiences offered’ porque tiene un alto porcentaje de valores a none, y no aporta valor. 
+
 Además, filtramos por los airbnbs en Madrid (filtramos por las que contienen “Mad”, vemos que el resultado es correcto, y aceptamos), como se muestra en la siguiente imagen.
 
  ![image](https://github.com/user-attachments/assets/8dd26489-f250-4686-836f-cd1e1adef397)
@@ -16,18 +13,17 @@ A continuación, se carga el fichero Nveces_alquilado.csv como fuente de datos y
  
 En este nuevo fichero, se crea una nueva columna nueva que es el número de amenities que tiene cada Airbnb a alquilar.
 
-![image](https://github.com/user-attachments/assets/5ebd856d-bd21-40a8-842b-3070e0f57a74)
-
 Una vez se cargan los ficheros y se eliman las columnas innecesarias, se van a crear las columnas calculadas que se usarán en la creación del Dashboard.
+
 La primera columna del fichero ‘airbnb-listings Madrid’ a crear es ‘Number of amenities’, que calcula cuántas amenities tiene un Airbnb a partir del listado de amenities.
 
  ![image](https://github.com/user-attachments/assets/9ee54c9e-933c-43e9-bf71-0c454e71a591)
 
-Las partes de la fórmula son:
-•	LEN('YourTableName'[amenities]) -> Calcula la longitud de la cadena en la columna amenities.
-•	SUBSTITUTE('YourTableName'[amenities], ",", "") -> Elimina todas las comas de la cadena.
-•	LEN('YourTableName'[amenities]) - LEN(SUBSTITUTE('YourTableName'[amenities], ",", "")) -> Encuentra la diferencia en longitud, que es el número de comas en la cadena.
-•	+ 1-> Añade 1 al resultado para contar el número total de amenities, ya que el número de comas es siempre uno menos que el número de items listados.
+Las partes de la fórmula son las siguientes:
+LEN('YourTableName'[amenities]) -> Calcula la longitud de la cadena en la columna amenities.
+SUBSTITUTE('YourTableName'[amenities], ",", "") -> Elimina todas las comas de la cadena.
+LEN('YourTableName'[amenities]) - LEN(SUBSTITUTE('YourTableName'[amenities], ",", "")) -> Encuentra la diferencia en longitud, que es el número de comas en la cadena.
++ 1-> Añade 1 al resultado para contar el número total de amenities, ya que el número de comas es siempre uno menos que el número de items listados.
 
 Otra columna calculada del fichero ‘airbnb-listings Madrid’ es ‘Number of Host Verification’, que, de la misma forma en la que se calcula la columna anterior, cuenta cuántas verificaciones tiene cada host.
 
@@ -39,17 +35,22 @@ Por otro lado, la columna calculada ‘RentalCategory’ en el fichero ‘Nveces
  ![image](https://github.com/user-attachments/assets/51755843-3eba-417c-b191-830208f91570)
 
 
-Explicación del Dashboard creado.
+*Explicación del Dashboard creado.*
+
 Con este dashboard se busca estudiar cómo afectan las distintas características del Airbnb en alquiler y el host de este con respecto a las notas que reciben en las valoraciones.
 -	Página 1 - Tasa de reviews
- 
+ ![image](https://github.com/user-attachments/assets/d5a10c60-952a-4e47-a648-e68a8502b9a3)
+
 En esta página se crean todos los gráficos necesarios para estudiar cómo afectan las características de los hosts y de los airbnbs a las reviews recibidas por los usuarios. 
 Como conclusiones, se pueden obtener las siguientes:
 o	La valoración de la respuesta de los host afecta proporcionalmente a la valoración de los reviews. 
 o	 
 
 	
--	Página 2 - Comparación por reviews de los airbnbs con peor y mejor reviews. 
+-	Página 2 - Comparación por reviews de los airbnbs con peor y mejor reviews.
+
+  ![image](https://github.com/user-attachments/assets/9189cac6-c796-44be-83af-fe843761aeed)
+
 En esta página se hace la comparación del resultado del promedio de las distintas características de los Airbnb para los pero valorados y los mejor valorados con más reviews.
  
 
@@ -59,5 +60,8 @@ Por otro lado, la tasa de limpieza es más alta en los airbnbs mejor valorados, 
 Por último, el número de verificaciones del host, la disponibilidad y el número de estancias en los airbnbs es menor en los airbnbs mejor valorados, pero son características que no deben afectar proporcionalmente a la score review.
 
 -	Página 3 - Pronostico de reviews.
+
+![image](https://github.com/user-attachments/assets/3e293fe7-e7cc-4529-aa2f-445c9a852414)
+
 En esta página se muestra un gráfico de líneas de la suma de las reviews de los host ids a lo largo de los años. Además, se calcula el valor máximo, mínimo y medio, y se hace el pronóstico de los siguientes meses.
 Debido a que esta línea es muy variada en la zona de valores existentes, la línea generado de pronóstico no es muy buena.
