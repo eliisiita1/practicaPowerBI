@@ -46,6 +46,29 @@ Con este dashboard se busca estudiar cómo afectan las distintas característica
 
 En esta página se crean todos los gráficos necesarios para estudiar cómo afectan las características de los hosts y de los airbnbs a las reviews recibidas por los usuarios. 
 Como conclusiones, se pueden obtener las siguientes:
+
+- Informe Host Id, Host Listing, Reviews rate y rental category.
+![image](https://github.com/user-attachments/assets/8d6a89f3-8475-4939-a946-bc0d88b03fd9)
+
+1. Host Listings y Reviews Rate:
+Relación entre el número de propiedades (Host Listings) y la tasa de reseñas (Reviews Rate): Aunque no se puede establecer una relación directa solo con los datos visuales de la tabla, parece que algunos anfitriones con más propiedades (como el host con 15 propiedades, Host ID 82175) tienden a tener tasas de reseñas más bajas en comparación con anfitriones que solo tienen 1 o 2 propiedades.
+Conclusión: Los anfitriones con menos propiedades parecen tener un mayor enfoque en la calidad y la interacción con sus huéspedes, lo que podría estar contribuyendo a tasas de reseñas más altas.
+
+3. Categorías de Alquiler (Rental Category):
+Impacto de la categoría de alquiler en la tasa de reseñas: Los anfitriones clasificados como "Recién Estrenado" parecen tener tasas de reseñas bastante altas en general, lo que podría indicar que los nuevos anfitriones tienden a ofrecer un buen servicio para obtener buenas reseñas desde el principio.
+Los anfitriones con más experiencia, como los etiquetados como "Veterano de Alquiler" o "Estrella del Alquiler", mantienen tasas de reseñas altas, pero no siempre superan a los recién estrenados.
+Conclusión: Los anfitriones nuevos parecen esforzarse más por obtener buenas calificaciones, aunque los anfitriones veteranos y destacados también logran mantener altas tasas de reseñas.
+
+4. Rango de Reviews Rate:
+Las tasas de reseñas oscilan desde un 74% hasta el 100%, con varios anfitriones alcanzando el 100% en tasa de reseñas, lo que indica una excelente interacción con sus huéspedes.
+Conclusión: Un alto porcentaje de estos anfitriones logra que casi todos los huéspedes dejen una reseña, lo cual es positivo, ya que más reseñas generalmente proporcionan más visibilidad y confianza para futuros inquilinos.
+
+
+6. Colores y Formato Condicional:
+Los colores de formato condicional destacan visualmente los valores más altos y más bajos, permitiendo identificar rápidamente los mejores y peores desempeños.
+Reviews Rate: Los valores más altos (en rojo) parecen asociarse con los nuevos anfitriones, lo que podría señalar un esfuerzo inicial para maximizar la tasa de reseñas.
+Rental Category: Las categorías como "Recién Estrenado" tienden a recibir una coloración verde, lo que refuerza su desempeño positivo en cuanto a la interacción con los huéspedes.
+
  
    - **Relación entre la tasa de respuesta del anfitrión y la calificación de las reseñas**: Este gráfico de dispersión muestra que no parece haber una correlación clara entre el **Host Response Rate** (tasa de respuesta del anfitrión) y el **Review Scores Rating** (calificación de las reseñas). Los datos están muy dispersos, indicando que, aunque algunos anfitriones tienen una tasa de respuesta muy alta, esto no necesariamente se refleja en mejores calificaciones.
      - **Conclusión:** La rapidez o frecuencia con la que un anfitrión responde no parece influir directamente en la calificación general que reciben
