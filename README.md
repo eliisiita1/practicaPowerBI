@@ -1,4 +1,5 @@
 PRÁCTICA POWER BI.  
+**Pasos a seguir**
 Primero se carga el fichero Airbnb-Listing Madrid csv como fuente de datos y se transforma. Para ello, se eliminan las columnas que no son necesarias, como Listing url, el nombre o el resumen. Además, se borra la columna ‘Experiences offered’ porque tiene un porcentaje muy alto de valores 'none', y no aporta valor. 
 
 Además, se añade un filtro para trabajar únicamente con los airbnbs en Madrid (filtramos por las que contienen “Mad”, vemos que el resultado es correcto, y aceptamos), como se muestra en la siguiente imagen.
@@ -38,79 +39,61 @@ Por último, se crea la columna calculada ‘RentalCategory’ en el fichero ‘
  ![image](https://github.com/user-attachments/assets/51755843-3eba-417c-b191-830208f91570)
 
 
-*Explicación del Dashboard creado.*
+**Explicación del Dashboard creado.**
 
 Con este dashboard se busca estudiar cómo afectan las distintas características del Airbnb en alquiler y el host de este con respecto a las notas que reciben en las valoraciones.
+
 -	Página 1 - Tasa de reviews
  ![image](https://github.com/user-attachments/assets/d5a10c60-952a-4e47-a648-e68a8502b9a3)
 
 En esta página se crean todos los gráficos necesarios para estudiar cómo afectan las características de los hosts y de los airbnbs a las reviews recibidas por los usuarios. 
-Como conclusiones, se pueden obtener las siguientes:
 
-- Informe Host Id, Host Listing, Reviews rate y rental category.
+A continuación se detalla cada gráfico creado. 
+
+* Informe Host Id, Host Listing, Reviews rate y rental category.
 ![image](https://github.com/user-attachments/assets/8d6a89f3-8475-4939-a946-bc0d88b03fd9)
 
-1. Host Listings y Reviews Rate:
-Relación entre el número de propiedades (Host Listings) y la tasa de reseñas (Reviews Rate): Aunque no se puede establecer una relación directa solo con los datos visuales de la tabla, parece que algunos anfitriones con más propiedades (como el host con 15 propiedades, Host ID 82175) tienden a tener tasas de reseñas más bajas en comparación con anfitriones que solo tienen 1 o 2 propiedades.
-Conclusión: Los anfitriones con menos propiedades parecen tener un mayor enfoque en la calidad y la interacción con sus huéspedes, lo que podría estar contribuyendo a tasas de reseñas más altas.
-
-3. Categorías de Alquiler (Rental Category):
-Impacto de la categoría de alquiler en la tasa de reseñas: Los anfitriones clasificados como "Recién Estrenado" parecen tener tasas de reseñas bastante altas en general, lo que podría indicar que los nuevos anfitriones tienden a ofrecer un buen servicio para obtener buenas reseñas desde el principio.
-Los anfitriones con más experiencia, como los etiquetados como "Veterano de Alquiler" o "Estrella del Alquiler", mantienen tasas de reseñas altas, pero no siempre superan a los recién estrenados.
-Conclusión: Los anfitriones nuevos parecen esforzarse más por obtener buenas calificaciones, aunque los anfitriones veteranos y destacados también logran mantener altas tasas de reseñas.
-
-4. Rango de Reviews Rate:
-Las tasas de reseñas oscilan desde un 74% hasta el 100%, con varios anfitriones alcanzando el 100% en tasa de reseñas, lo que indica una excelente interacción con sus huéspedes.
-Conclusión: Un alto porcentaje de estos anfitriones logra que casi todos los huéspedes dejen una reseña, lo cual es positivo, ya que más reseñas generalmente proporcionan más visibilidad y confianza para futuros inquilinos.
-
-
-6. Colores y Formato Condicional:
-Los colores de formato condicional destacan visualmente los valores más altos y más bajos, permitiendo identificar rápidamente los mejores y peores desempeños.
-Reviews Rate: Los valores más altos (en rojo) parecen asociarse con los nuevos anfitriones, lo que podría señalar un esfuerzo inicial para maximizar la tasa de reseñas.
-Rental Category: Las categorías como "Recién Estrenado" tienden a recibir una coloración verde, lo que refuerza su desempeño positivo en cuanto a la interacción con los huéspedes.
-
+Este informe es muy útil para visualizar los t.
  
-- **Relación entre la tasa de respuesta del anfitrión y la calificación de las reseñas**: Este gráfico de dispersión muestra que no parece haber una correlación clara entre el **Host Response Rate** (tasa de respuesta del anfitrión) y el **Review Scores Rating** (calificación de las reseñas). Los datos están muy dispersos, indicando que, aunque algunos anfitriones tienen una tasa de respuesta muy alta, esto no necesariamente se refleja en mejores calificaciones.
-Como conclusión, la rapidez o frecuencia con la que un anfitrión responde no parece influir directamente en la calificación general que reciben
+- **Relación entre la tasa de respuesta del anfitrión y la calificación de las reseñas**: Este gráfico de dispersión muestra que parece haber una correlación clara entre el **Host Response Rate** (tasa de respuesta del anfitrión) y el **Review Scores Rating** (calificación de las reseñas). Los datos indican que la mayor parte de anfitriones que tienen una tasa de respuesta muy alta, se refleja en mejores calificaciones.
 
 ![image](https://github.com/user-attachments/assets/6a5c085a-20d2-48cd-b090-6b229264887a)
 
-  - **Relación entre el tipo de propiedad y el tipo de habitación con el promedio de valor de las reseñas**: Aquí se puede ver la comparación del **Review Scores Value** entre diferentes tipos de propiedades y tipos de habitaciones. Los alojamientos de tipo **Entire home/apt** y **Private room** parecen tener un rango de puntuaciones más altas que los alojamientos compartidos (**Shared room**).
+  - **Relación entre el tipo de propiedad y el tipo de habitación con el promedio de valor de las reseñas**.
+
+ ![image](https://github.com/user-attachments/assets/c0875ab5-212a-470d-9067-1539bec1a57e)
+
+Aquí se puede ver la comparación del **Review Scores Value** entre diferentes tipos de propiedades y tipos de habitaciones. Los alojamientos de tipo **Entire home/apt** y **Private room** parecen tener un rango de puntuaciones más altas que los alojamientos compartidos (**Shared room**).
 Los **Apartments**, **Lofts** y **Townhouses** tienden a tener mayores puntuaciones, mientras que propiedades como **Hostels** y **Boutique Hotels** tienden a tener puntuaciones más bajas.
 Como conclusión, las propiedades más privadas como **apartamentos completos** o **lofts** tienden a recibir mejores valoraciones en comparación con habitaciones compartidas o propiedades más comunes como hostales.
 
+ - **Ranking de barrios con las calificaciones más bajas**.
+![image](https://github.com/user-attachments/assets/e909a651-a853-44f1-bc87-f83824d71170)
 
-![image](https://github.com/user-attachments/assets/c0875ab5-212a-470d-9067-1539bec1a57e)
-
-
- - **Ranking de barrios con las calificaciones más bajas**:
 Este gráfico de barras clasifica los barrios que han recibido las calificaciones más bajas. Los barrios de **Moncloa**, **Valdeacederas** y **Nueva España** son los que tienen los puntajes más bajos en promedio.
 Como conclusión, estos barrios podrían necesitar mejoras en cuanto a la calidad de sus alojamientos o en los servicios que ofrecen, ya que reciben las calificaciones más bajas en el dataset.
 
-![image](https://github.com/user-attachments/assets/e909a651-a853-44f1-bc87-f83824d71170)
 
- - **Comparación de factores clave en las evaluaciones**:
-Este gráfico de radar compara cuatro factores clave en las evaluaciones: **Número de Amenidades**, **Precio**, **Tarifa de Limpieza** y **Noche Mínima**.
-Como conclusión, los **precios** y las **tarifas de limpieza** tienden a recibir puntajes más bajos en comparación con las demás categorías, lo que sugiere que los usuarios encuentran que estos dos factores no son tan satisfactorios. Además, el **número de amenidades** y las **noches mínimas** parecen recibir evaluaciones más equilibradas.
+ - **Comparación de factores clave en las evaluaciones**.
 
 ![image](https://github.com/user-attachments/assets/e11017a3-70f7-4b26-bc40-0988381dc188)
 
+Este gráfico de radar compara cuatro factores clave en las evaluaciones: **Número de Amenidades**, **Precio**, **Tarifa de Limpieza** y **Noche Mínima**.
+Como conclusión, los **precios** y las **tarifas de limpieza** tienden a recibir puntajes más bajos en comparación con las demás categorías, lo que sugiere que los usuarios encuentran que estos dos factores no son tan satisfactorios. Además, el **número de amenidades** y las **noches mínimas** parecen recibir evaluaciones más equilibradas.
 
 
-
--	Página 2 - Comparación por reviews de los airbnbs con peor y mejor reviews.
+*	Página 2 - Comparación por reviews de los airbnbs con peor y mejor reviews.
 
   ![image](https://github.com/user-attachments/assets/9189cac6-c796-44be-83af-fe843761aeed)
 
 En esta página se hace la comparación del resultado del promedio de las distintas características de los Airbnb para los pero valorados y los mejor valorados con más reviews.
  
-
-Conclusiones.
-El número de comodidades, el porcentaje de respuesta del host y el número de veces que se alquila, de los Airbnb mejor valorados tienen un promedio mayor, por lo que son características que favorecen que los Airbnb sean mejores. Estas características afectan proporcionalmente a la nota que los usuarios ponen a los airbnbs.
+Como conclusión, el número de comodidades, el porcentaje de respuesta del host y el número de veces que se alquila, de los Airbnb mejor valorados tienen un promedio mayor, por lo que son características que favorecen que los Airbnb sean mejores. Estas características afectan proporcionalmente a la nota que los usuarios ponen a los airbnbs.
 Por otro lado, la tasa de limpieza es más alta en los airbnbs mejor valorados, por lo que seguramente haga que los airbnbs estén más limpios y esto a su vez favorezca la nota del Airbnb. Esto mismo ocurre con el precio, que, es mayor en airbnbs mejor valorados seguramente por las características que tiene. 
 Por último, el número de verificaciones del host, la disponibilidad y el número de estancias en los airbnbs es menor en los airbnbs mejor valorados, pero son características que no deben afectar proporcionalmente a la score review.
 
--	Página 3 - Pronostico de reviews.
+
+*	Página 3 - Pronostico de reviews.
 
 ![image](https://github.com/user-attachments/assets/3e293fe7-e7cc-4529-aa2f-445c9a852414)
 
