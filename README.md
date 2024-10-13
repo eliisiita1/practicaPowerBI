@@ -44,6 +44,7 @@ Por último, se crea la columna calculada ‘RentalCategory’ en el fichero ‘
 Con este dashboard se busca estudiar cómo afectan las distintas características del Airbnb en alquiler y el host de este con respecto a las notas que reciben en las valoraciones.
 
 -	Página 1 - Tasa de reviews
+
  ![image](https://github.com/user-attachments/assets/d5a10c60-952a-4e47-a648-e68a8502b9a3)
 
 En esta página se crean todos los gráficos necesarios para estudiar cómo afectan las características de los hosts y de los airbnbs a las reviews recibidas por los usuarios. 
@@ -51,42 +52,36 @@ En esta página se crean todos los gráficos necesarios para estudiar cómo afec
 A continuación se detalla cada gráfico creado en esta página.
 
 
-* Informe Host Id, Host Listing, Reviews rate y rental category. ![image](https://github.com/user-attachments/assets/8d6a89f3-8475-4939-a946-bc0d88b03fd9)
-
+* **Informe Host Id, Host Listing, Reviews rate y rental category**. ![image](https://github.com/user-attachments/assets/8d6a89f3-8475-4939-a946-bc0d88b03fd9)
 Este informe es muy útil para visualizar los top 100 host ids con sus reviews, las categorías de alquiler y los host listings. 
 Además, las tres últimas columnas están configuradas para tener un color de fondo condicional segúm su valor, lo cual facilita su lectura y comprensión.
  
 + **Relación entre la tasa de respuesta del anfitrión y la calificación de las reseñas**:
 ![image](https://github.com/user-attachments/assets/6a5c085a-20d2-48cd-b090-6b229264887a)
-
 Este gráfico de dispersión muestra que parece haber una correlación clara entre el **Host Response Rate** (tasa de respuesta del anfitrión) y el **Review Scores Rating** (calificación de las reseñas). Los datos indican que la mayor parte de anfitriones que tienen una tasa de respuesta muy alta, se refleja en mejores calificaciones.
   
 
  ÷ **Relación entre el tipo de propiedad y el tipo de habitación con el promedio de valor de las reseñas**.
-
  ![image](https://github.com/user-attachments/assets/c0875ab5-212a-470d-9067-1539bec1a57e)
-
 Aquí se puede ver la comparación del **Review Scores Value** entre diferentes tipos de propiedades y tipos de habitaciones. Los alojamientos de tipo **Entire home/apt** y **Private room** parecen tener un rango de puntuaciones más altas que los alojamientos compartidos (**Shared room**).
 Los **Apartments**, **Lofts** y **Townhouses** tienden a tener mayores puntuaciones, mientras que propiedades como **Hostels** y **Boutique Hotels** tienden a tener puntuaciones más bajas.
 Como conclusión, las propiedades más privadas como **apartamentos completos** o **lofts** tienden a recibir mejores valoraciones en comparación con habitaciones compartidas o propiedades más comunes como hostales.
 
 ÷ **Ranking de barrios con las calificaciones más bajas**.
 ![image](https://github.com/user-attachments/assets/e909a651-a853-44f1-bc87-f83824d71170)
-
 Este gráfico de barras clasifica los barrios que han recibido las calificaciones más bajas. Los barrios de **Moncloa**, **Valdeacederas** y **Nueva España** son los que tienen los puntajes más bajos en promedio.
 Como conclusión, estos barrios podrían necesitar mejoras en cuanto a la calidad de sus alojamientos o en los servicios que ofrecen, ya que reciben las calificaciones más bajas en el dataset.
 
 
 + **Comparación de factores clave en las evaluaciones**.
-
 ![image](https://github.com/user-attachments/assets/e11017a3-70f7-4b26-bc40-0988381dc188)
-
 Este gráfico de radar compara cuatro factores clave en las evaluaciones: **Número de Amenidades**, **Precio**, **Tarifa de Limpieza** y **Noche Mínima**.
 Como conclusión, los **precios** y las **tarifas de limpieza** tienden a recibir puntajes más bajos en comparación con las demás categorías, lo que sugiere que los usuarios encuentran que estos dos factores no son tan satisfactorios. Además, el **número de amenidades** y las **noches mínimas** parecen recibir evaluaciones más equilibradas.
 
 
 -	Página 2 - Comparación por reviews de los airbnbs con peor y mejor reviews.
 
+  
   ![image](https://github.com/user-attachments/assets/9189cac6-c796-44be-83af-fe843761aeed)
 
 En esta página se hace la comparación del resultado del promedio de las distintas características de los Airbnb para los pero valorados y los mejor valorados con más reviews.
@@ -97,6 +92,7 @@ Por último, el número de verificaciones del host, la disponibilidad y el núme
 
 
 - Página 3 - Pronostico de reviews.
+
 
 ![image](https://github.com/user-attachments/assets/3e293fe7-e7cc-4529-aa2f-445c9a852414)
 
