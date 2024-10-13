@@ -1,5 +1,6 @@
 PRÁCTICA POWER BI.  
 **Pasos a seguir**
+
 Primero se carga el fichero Airbnb-Listing Madrid csv como fuente de datos y se transforma. Para ello, se eliminan las columnas que no son necesarias, como Listing url, el nombre o el resumen. Además, se borra la columna ‘Experiences offered’ porque tiene un porcentaje muy alto de valores 'none', y no aporta valor. 
 
 Además, se añade un filtro para trabajar únicamente con los airbnbs en Madrid (filtramos por las que contienen “Mad”, vemos que el resultado es correcto, y aceptamos), como se muestra en la siguiente imagen.
@@ -48,16 +49,19 @@ Con este dashboard se busca estudiar cómo afectan las distintas característica
 
 En esta página se crean todos los gráficos necesarios para estudiar cómo afectan las características de los hosts y de los airbnbs a las reviews recibidas por los usuarios. 
 
-A continuación se detalla cada gráfico creado. 
+A continuación se detalla cada gráfico creado en esta página.
 
-* Informe Host Id, Host Listing, Reviews rate y rental category.
-![image](https://github.com/user-attachments/assets/8d6a89f3-8475-4939-a946-bc0d88b03fd9)
 
-Este informe es muy útil para visualizar los t.
+* Informe Host Id, Host Listing, Reviews rate y rental category. ![image](https://github.com/user-attachments/assets/8d6a89f3-8475-4939-a946-bc0d88b03fd9)
+
+Este informe es muy útil para visualizar los top 100 host ids con sus reviews, las categorías de alquiler y los host listings. 
+Además, las tres últimas columnas están configuradas para tener un color de fondo condicional segúm su valor, lo cual facilita su lectura y comprensión.
  
-- **Relación entre la tasa de respuesta del anfitrión y la calificación de las reseñas**: Este gráfico de dispersión muestra que parece haber una correlación clara entre el **Host Response Rate** (tasa de respuesta del anfitrión) y el **Review Scores Rating** (calificación de las reseñas). Los datos indican que la mayor parte de anfitriones que tienen una tasa de respuesta muy alta, se refleja en mejores calificaciones.
-
+- **Relación entre la tasa de respuesta del anfitrión y la calificación de las reseñas**:
 ![image](https://github.com/user-attachments/assets/6a5c085a-20d2-48cd-b090-6b229264887a)
+
+Este gráfico de dispersión muestra que parece haber una correlación clara entre el **Host Response Rate** (tasa de respuesta del anfitrión) y el **Review Scores Rating** (calificación de las reseñas). Los datos indican que la mayor parte de anfitriones que tienen una tasa de respuesta muy alta, se refleja en mejores calificaciones.
+  
 
   - **Relación entre el tipo de propiedad y el tipo de habitación con el promedio de valor de las reseñas**.
 
