@@ -27,14 +27,14 @@ LEN('YourTableName'[amenities]) -> Calcula la longitud de la cadena en la column
 
 + LEN('YourTableName'[amenities]) - LEN(SUBSTITUTE('YourTableName'[amenities], ",", "")) -> Encuentra la diferencia en longitud, que es el número de comas en la cadena.
 
-+ 1-> Añade 1 al resultado para contar el número total de amenities, ya que el número de comas es siempre uno menos que el número de items listados.
++ +1-> Añade 1 al resultado para contar el número total de amenities, ya que el número de comas es siempre uno menos que el número de items listados.
 
-Otra columna calculada para el fichero ‘airbnb-listings Madrid’ quw se añade es ‘Number of Host Verification’, que, de la misma forma en la que se calcula la columna anterior, muestra cuántas verificaciones tiene cada host.
+Otra columna calculada para el fichero ‘airbnb-listings Madrid’ que se añade es ‘Number of Host Verification’, que, de la misma forma en la que se calcula la columna anterior, muestra cuántas verificaciones tiene cada host. La fórmula utilizada con DAX se muestra en la siguiente imagen:
 
 ![image](https://github.com/user-attachments/assets/ba77ec25-d885-4717-ad7e-0d5133505c25)
 
  
-Por último, se crea la columna calculada ‘RentalCategory’ en el fichero ‘Nveces_alquilado’ para clasificar los airbnbs por el número de veces que se ha alquilado, agrupándolos en tres grupos: Recién estrenado, veterano de alquiler y estrella del alquiler.
+Por último, se crea la columna calculada ‘RentalCategory’ en el fichero ‘Nveces_alquilado’ para clasificar los airbnbs por el número de veces que se ha alquilado, agrupándolos en tres grupos: Recién estrenado, veterano de alquiler y estrella del alquiler. En la siguiente imagen se muestra la fórmula calculada con DAX:
  
  ![image](https://github.com/user-attachments/assets/51755843-3eba-417c-b191-830208f91570)
 
