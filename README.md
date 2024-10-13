@@ -13,20 +13,19 @@ A continuación, se carga el fichero Nveces_alquilado.csv como fuente de datos y
 
  ![image](https://github.com/user-attachments/assets/27d3d7a5-1890-400c-853f-ac71479e2041)
  
-En este nuevo fichero, se crea una nueva columna nueva que es el número de amenities que tiene cada Airbnb a alquilar.
 
-Una vez se cargan los ficheros y se eliman las columnas innecesarias, se van a añadir las columnas calculadas que se usarán en la creación del Dashboard.
+Una vez se cargan los ficheros y se eliman las columnas innecesarias, se van a crear las columnas calculadas que se usarán en la creación del Dashboard.
 
-La primera columna del fichero ‘airbnb-listings Madrid’ a crear es ‘Number of amenities’, que calcula cuántas amenities tiene un Airbnb a partir del listado de amenities.
+La primera columna del fichero ‘airbnb-listings Madrid’ creada es ‘Number of amenities’, que calcula cuántas amenities tiene un Airbnb a partir del listado de amenities, con la fórmula DAX de la siguiente imagen.
 
  ![image](https://github.com/user-attachments/assets/9ee54c9e-933c-43e9-bf71-0c454e71a591)
 
 Las partes de la fórmula son las siguientes:
 LEN('YourTableName'[amenities]) -> Calcula la longitud de la cadena en la columna amenities.
 
-SUBSTITUTE('YourTableName'[amenities], ",", "") -> Elimina todas las comas de la cadena.
+ + SUBSTITUTE('YourTableName'[amenities], ",", "") -> Elimina todas las comas de la cadena.
 
-LEN('YourTableName'[amenities]) - LEN(SUBSTITUTE('YourTableName'[amenities], ",", "")) -> Encuentra la diferencia en longitud, que es el número de comas en la cadena.
++ LEN('YourTableName'[amenities]) - LEN(SUBSTITUTE('YourTableName'[amenities], ",", "")) -> Encuentra la diferencia en longitud, que es el número de comas en la cadena.
 
 + 1-> Añade 1 al resultado para contar el número total de amenities, ya que el número de comas es siempre uno menos que el número de items listados.
 
